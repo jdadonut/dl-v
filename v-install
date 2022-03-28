@@ -1,6 +1,10 @@
-#! /bin/bash
+
 # this is for gitpod, because im out of the house right now.
 
-git clone https://github.com/vlang/v ~/.v-install
+sudo rm -rf ~/.v-install
+echo "silent git clone vlang/v..."
+git clone --quiet https://github.com/vlang/v ~/.v-install
 cd ~/.v-install
-sudo make
+echo "silent sudo make..."
+sudo make > /dev/null 2>&1
+alias v="~/.v-install/v"
