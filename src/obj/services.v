@@ -1,7 +1,7 @@
 module obj
 
-enum services {
-	Gelbooru
-	Danbooru
-	Safebooru
+pub enum Services {
+	gelbooru
+	danbooru
+	safebooru
 }

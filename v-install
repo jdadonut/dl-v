@@ -8,3 +8,4 @@ cd ~/.v-install
 echo "silent sudo make..."
 sudo make > /dev/null 2>&1
 alias v="~/.v-install/v"
+cd - > /dev/null 2>&1
